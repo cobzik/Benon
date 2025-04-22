@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benon Posadzki Przemysłowe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      /* Tło strony ustawione na biały, aby pasowało do tła logo */
+      background-color: #FFFFFF;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center; /* Wyśrodkowanie zawartości pionowo */
+    }
+    header {
+      /* Tło nagłówka również ustawione na biały */
+      background-color: #FFFFFF;
+      padding: 2rem;
+      width: 100%;
+      text-align: center; /* Wyśrodkowanie logo */
+      /* Usunięto box-shadow */
+    }
+    header img {
+        max-height: 100px; /* Wysokość logo, dostosuj */
+        display: inline-block;
+    }
+
+    main {
+        flex-grow: 1; /* Zajmuje dostępną przestrzeń */
+        display: flex;
+        justify-content: center; /* Wyśrodkowanie nawigacji w poziomie */
+        align-items: center; /* Wyśrodkowanie nawigacji w pionie wewnątrz main */
+        width: 100%;
+        padding: 1rem;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column; /* Kategorie jedna pod drugą */
+      align-items: center; /* Wyśrodkowanie tekstu kategorii */
+    }
+
+    nav a {
+      margin: 0.5rem 0; /* Odstęp pionowy między kategoriami */
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+      text-transform: uppercase; /* Kategorie dużymi literami */
+      font-size: 1.5rem; /* Rozmiar czcionki kategorii */
+      padding: 0.5rem 1rem;
+    }
+    nav a:hover {
+      color: #7a93a1; /* Kolor po najechaniu */
+    }
+
+    /* Usunięto style dla sekcji i stopki */
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Zasób 1.jpg" alt="Logo Benon posadzki przemysłowe">
+  </header>
+  <main>
+    <nav>
+      <a href="#o-firmie">O firmie</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </main>
+</body>
+</html>
