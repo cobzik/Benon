@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benon Posadzki Przemysłowe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FFFFFF; /* Białe tło */
+      color: #333; /* Kolor tekstu */
+      line-height: 1.6;
+      display: flex;
+      justify-content: center; /* Wyśrodkowanie zawartości poziomo */
+      align-items: center; /* Wyśrodkowanie zawartości pionowo */
+      min-height: 100vh; /* Wysokość 100% ekranu */
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header img {
+        max-height: 100px; /* Wysokość logo */
+        display: inline-block;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column; /* Kategorie jedna pod drugą */
+      align-items: center; /* Wyśrodkowanie tekstu kategorii */
+      gap: 1rem; /* Odstęp między kategoriami */
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #7a93a1; /* Kolor po najechaniu */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Zasób 1.jpg" alt="Logo Benon posadzki przemysłowe">
+  </header>
+  <main>
+    <nav>
+      <a href="#o-firmie">O firmie</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </main>
+</body>
+</html>
