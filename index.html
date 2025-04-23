@@ -18,17 +18,15 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       min-height: 100vh;
-      transition: background-color 0.5s ease;
     }
     header {
-      margin-bottom: 3rem;
+      margin: 2rem 1rem;
       text-align: center;
       animation: fadeIn 1s ease-out;
     }
     header img {
-      max-height: 120px;
+      max-height: 100px;
       width: auto;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       border-radius: 12px;
@@ -37,20 +35,22 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1rem;
+      margin-bottom: 2rem;
       animation: fadeInUp 1.2s ease-out;
     }
     nav a {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 240px;
-      height: 60px;
+      width: 80%;
+      max-width: 280px;
+      height: 50px;
       text-decoration: none;
       color: #333;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      padding: 0.8rem 2rem;
+      padding: 0.8rem 1rem;
       border-radius: 8px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
       background-color: #fff;
@@ -63,30 +63,20 @@
       box-shadow: 0 12px 24px rgba(0,0,0,0.12);
       color: #555;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
 
     .content-section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
+      max-width: 95%;
+      width: 800px;
+      margin: 1rem auto;
+      padding: 1.5rem;
       background-color: #f9f9f9;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s ease-out forwards;
       display: none;
     }
 
     .content-section p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 1.6;
       margin-bottom: 1.2rem;
       color: #555;
@@ -97,13 +87,45 @@
     }
 
     .contact-info {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #555;
       line-height: 1.6;
     }
 
     .contact-info p {
       margin-bottom: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (min-width: 768px) {
+      nav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+      }
+
+      nav a {
+        font-size: 1.4rem;
+        height: 60px;
+      }
+
+      .content-section p {
+        font-size: 1.2rem;
+      }
+
+      .contact-info {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
@@ -118,7 +140,6 @@
     <a href="javascript:void(0);" onclick="toggleSection('kontakt')">KONTAKT</a>
   </nav>
 
-  <!-- Sekcja "O Firmie" -->
   <section id="o-firmie" class="content-section">
     <p><strong>BENON Posadzki Przemysłowe Sp. z o.o.</strong> powstała w 2000 roku i zajmujemy się wykonawstwem posadzek przemysłowych według najnowszych technologii.</p>
     <p>Jesteśmy firmą elastyczną i mobilną, będącą w stanie wykonać zarówno posadzkę o powierzchni 100 m2, jak i 100 000 m2, dzięki temu, że dysponujemy zasobami ludzkimi i sprzętem pozwalającym sprostać obydwu zadaniom.</p>
@@ -126,7 +147,6 @@
     <p>Od 2009 roku uczestniczymy w budowach polskich autostrad i dróg szybkiego ruchu, realizując prace w zakresie stabilizacji cementem podbudów pod pasy jezdne oraz nawierzchnie betonowe na PPO, SPO oraz MOP.</p>
   </section>
 
-  <!-- Sekcja "Kontakt" -->
   <section id="kontakt" class="content-section">
     <div class="contact-info">
       <p><strong>Numer telefonu:</strong> 509192816</p>
@@ -142,13 +162,11 @@
 
   <script>
     function toggleSection(sectionId) {
-      // Ukryj wszystkie sekcje
       const sections = document.querySelectorAll('.content-section');
       sections.forEach(sec => sec.style.display = 'none');
-
-      // Pokaż tylko wybraną
       const section = document.getElementById(sectionId);
       section.style.display = 'block';
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   </script>
 </body>
