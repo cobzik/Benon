@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt - Benon Posadzki Przemysłowe</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Benon Posadzki Przemysłowe</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -11,66 +11,146 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #cc0000; /* Czerwone tło */
-      color: #fff; /* Biały tekst dla kontrastu */
-      line-height: 1.6;
+      background-color: #ffffff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      transition: background-color 0.5s ease;
+    }
+    header {
+      margin-bottom: 3rem;
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+    header img {
+      max-height: 120px;
+      width: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      animation: fadeInUp 1.2s ease-out;
+    }
+    nav a {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-    }
-
-    header {
+      width: 240px;
+      height: 60px;
+      text-decoration: none;
+      color: #333;
+      font-size: 1.6rem;
+      font-weight: 600;
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      background-color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-transform: uppercase;
       text-align: center;
-      margin-bottom: 2rem;
+    }
+    nav a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+      color: #555;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    header img {
-        max-height: 100px;
-        display: inline-block;
-    }
-
-    main {
-      text-align: center;
+    .content-section {
       max-width: 800px;
+      margin: 2rem auto;
       padding: 2rem;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+      display: none;
     }
 
-    h1 {
-      margin-bottom: 2rem;
-      font-size: 2.5rem;
+    .content-section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+      color: #555;
+    }
+
+    .content-section p strong {
+      font-weight: bold;
     }
 
     .contact-info {
       font-size: 1.2rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .contact-info p {
       margin-bottom: 1rem;
-    }
-
-    .contact-info a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: 600;
-    }
-
-    .contact-info a:hover {
-      color: #ffe6e6;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="Zasób 1.jpg" alt="Logo Benon posadzki przemysłowe">
+    <img src="logo.jpg" alt="Logo Benon posadzki przemysłowe">
   </header>
-  <main>
-    <h1>Kontakt</h1>
+  <nav>
+    <a href="javascript:void(0);" onclick="toggleSection('o-firmie')">O FIRMIE</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#uslugi">USŁUGI</a>
+    <a href="javascript:void(0);" onclick="toggleSection('kontakt')">KONTAKT</a>
+  </nav>
+
+  <!-- Sekcja "O Firmie" -->
+  <section id="o-firmie" class="content-section">
+    <p><strong>BENON Posadzki Przemysłowe Sp. z o.o.</strong> powstała w 2000 roku i zajmujemy się wykonawstwem posadzek przemysłowych według najnowszych technologii.</p>
+    <p>Jesteśmy firmą elastyczną i mobilną, będącą w stanie wykonać zarówno posadzkę o powierzchni 100 m2, jak i 100 000 m2, dzięki temu, że dysponujemy zasobami ludzkimi i sprzętem pozwalającym sprostać obydwu zadaniom.</p>
+    <p>Duża część naszej produkcji to posadzki w przechowalniach owoców i warzyw, zarówno w budynkach sortowni i komór chłodniczych, jak i na placach manewrowych, jako beton nawierzchniowy zewnętrzny.</p>
+    <p>Od 2009 roku uczestniczymy w budowach polskich autostrad i dróg szybkiego ruchu, realizując prace w zakresie stabilizacji cementem podbudów pod pasy jezdne oraz nawierzchnie betonowe na PPO, SPO oraz MOP.</p>
+  </section>
+
+  <!-- Sekcja "Kontakt" -->
+  <section id="kontakt" class="content-section">
     <div class="contact-info">
-      <p><strong>Adres:</strong> ul. Przemysłowa 123, 00-000 Miasto</p>
-      <p><strong>Telefon:</strong> <a href="tel:+48123456789">+48 123 456 789</a></p>
-      <p><strong>Email:</strong> <a href="mailto:kontakt@benonposadzki.pl">kontakt@benonposadzki.pl</a></p>
+      <p><strong>Numer telefonu:</strong> 509192816</p>
+      <p><strong>Adres e-mail:</strong> <a href="mailto:mbenon@o2.pl">mbenon@o2.pl</a></p>
+      <p><strong>Adres:</strong><br>
+        Ulica: Północna 6a/18<br>
+        Kod pocztowy: 96-100<br>
+        Miasto: Skierniewice<br>
+        NIP: 8672240967
+      </p>
     </div>
-  </main>
+  </section>
+
+  <script>
+    function toggleSection(sectionId) {
+      // Ukryj wszystkie sekcje
+      const sections = document.querySelectorAll('.content-section');
+      sections.forEach(sec => sec.style.display = 'none');
+
+      // Pokaż tylko wybraną
+      const section = document.getElementById(sectionId);
+      section.style.display = 'block';
+    }
+  </script>
 </body>
 </html>
+
