@@ -11,6 +11,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Inter', sans-serif;
       background-color: #ffffff;
@@ -19,137 +20,140 @@
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      padding: 2rem 1rem;
     }
+
     header {
-      margin: 2rem 1rem;
+      margin-bottom: 2rem;
       text-align: center;
-      animation: fadeIn 1s ease-out;
     }
+
     header img {
       max-height: 100px;
       width: auto;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
     nav {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 1rem;
       margin-bottom: 2rem;
-      animation: fadeInUp 1.2s ease-out;
     }
+
     nav a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-      max-width: 280px;
-      height: 50px;
+      width: 220px;
+      padding: 0.8rem 1rem;
       text-decoration: none;
       color: #333;
       font-size: 1.2rem;
       font-weight: 600;
-      padding: 0.8rem 1rem;
-      border-radius: 8px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      background-color: #fff;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-transform: uppercase;
       text-align: center;
+      text-transform: uppercase;
+      border-radius: 8px;
+      background-color: #f8f8f8;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
+
     nav a:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-      color: #555;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
     .content-section {
-      max-width: 95%;
-      width: 800px;
-      margin: 1rem auto;
-      padding: 1.5rem;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       display: none;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #f9f9f9;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      animation: fadeIn 0.5s ease;
+    }
+
+    .content-section.active {
+      display: block;
     }
 
     .content-section p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 1.2rem;
-      color: #555;
-    }
-
-    .content-section p strong {
-      font-weight: bold;
-    }
-
-    .contact-info {
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .contact-info p {
       margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .contact-info a {
+      color: #333;
+      text-decoration: underline;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    @media (min-width: 768px) {
+    /* Przycisk "Zadzwoń teraz" */
+    .call-btn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    @media (max-width: 768px) {
+      .call-btn {
+        display: block;
+      }
       nav {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-      }
-
-      nav a {
-        font-size: 1.4rem;
-        height: 60px;
-      }
-
-      .content-section p {
-        font-size: 1.2rem;
-      }
-
-      .contact-info {
-        font-size: 1.2rem;
+        width: 100%;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <img src="logo.jpg" alt="Logo Benon posadzki przemysłowe">
   </header>
+
   <nav>
-    <a href="javascript:void(0);" onclick="toggleSection('o-firmie')">O FIRMIE</a>
-    <a href="#portfolio">PORTFOLIO</a>
-    <a href="#uslugi">USŁUGI</a>
-    <a href="javascript:void(0);" onclick="toggleSection('kontakt')">KONTAKT</a>
+    <a href="#o-firmie" onclick="showSection('o-firmie')">O FIRMIE</a>
+    <a href="#portfolio" onclick="showSection('portfolio')">PORTFOLIO</a>
+    <a href="#uslugi" onclick="showSection('uslugi')">USŁUGI</a>
+    <a href="#kontakt" onclick="showSection('kontakt')">KONTAKT</a>
   </nav>
 
   <section id="o-firmie" class="content-section">
     <p><strong>BENON Posadzki Przemysłowe Sp. z o.o.</strong> powstała w 2000 roku i zajmujemy się wykonawstwem posadzek przemysłowych według najnowszych technologii.</p>
-    <p>Jesteśmy firmą elastyczną i mobilną, będącą w stanie wykonać zarówno posadzkę o powierzchni 100 m2, jak i 100 000 m2, dzięki temu, że dysponujemy zasobami ludzkimi i sprzętem pozwalającym sprostać obydwu zadaniom.</p>
+    <p>Jesteśmy firmą elastyczną i mobilną, będącą w stanie wykonać zarówno posadzkę o powierzchni 100 m², jak i 100 000 m², dzięki temu, że dysponujemy zasobami ludzkimi i sprzętem pozwalającym sprostać obydwu zadaniom.</p>
     <p>Duża część naszej produkcji to posadzki w przechowalniach owoców i warzyw, zarówno w budynkach sortowni i komór chłodniczych, jak i na placach manewrowych, jako beton nawierzchniowy zewnętrzny.</p>
     <p>Od 2009 roku uczestniczymy w budowach polskich autostrad i dróg szybkiego ruchu, realizując prace w zakresie stabilizacji cementem podbudów pod pasy jezdne oraz nawierzchnie betonowe na PPO, SPO oraz MOP.</p>
   </section>
 
+  <section id="portfolio" class="content-section">
+    <p>Przykładowe realizacje wkrótce...</p>
+  </section>
+
+  <section id="uslugi" class="content-section">
+    <p>Nasze usługi obejmują wykonanie posadzek przemysłowych, stabilizacji podbudów, betonowanie placów i inne.</p>
+  </section>
+
   <section id="kontakt" class="content-section">
     <div class="contact-info">
-      <p><strong>Numer telefonu:</strong> 509192816</p>
+      <p><strong>Numery telefonu:</strong><br>
+        📞 <a href="tel:509192816">509 192 816</a><br>
+        📞 <a href="tel:781555519">781 555 519</a>
+      </p>
       <p><strong>Adres e-mail:</strong> <a href="mailto:mbenon@o2.pl">mbenon@o2.pl</a></p>
       <p><strong>Adres:</strong><br>
         Ulica: Północna 6a/18<br>
@@ -160,15 +164,16 @@
     </div>
   </section>
 
+  <a href="tel:509192816" class="call-btn">📞 Zadzwoń teraz</a>
+
   <script>
-    function toggleSection(sectionId) {
+    function showSection(id) {
       const sections = document.querySelectorAll('.content-section');
-      sections.forEach(sec => sec.style.display = 'none');
-      const section = document.getElementById(sectionId);
-      section.style.display = 'block';
-      section.scrollIntoView({ behavior: 'smooth' });
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
     }
   </script>
+
 </body>
 </html>
 
