@@ -63,6 +63,13 @@
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     }
 
+    @media (min-width: 1024px) {
+      nav a {
+        width: 320px;
+        font-size: 1.4rem;
+      }
+    }
+
     .content-section {
       display: none;
       max-width: 800px;
@@ -93,7 +100,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Przycisk "Zadzwoń teraz" */
+    /* Przycisk Zadzwoń teraz */
     .call-btn {
       display: none;
       position: fixed;
@@ -108,15 +115,43 @@
       text-decoration: none;
       box-shadow: 0 6px 10px rgba(0,0,0,0.2);
       z-index: 999;
+      cursor: pointer;
     }
 
     @media (max-width: 768px) {
       .call-btn {
         display: block;
       }
-      nav {
-        width: 100%;
-      }
+    }
+
+    /* Popup */
+    .call-popup {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      z-index: 1000;
+    }
+
+    .call-popup a {
+      display: block;
+      padding: 12px 16px;
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid #eee;
+    }
+
+    .call-popup a:last-child {
+      border-bottom: none;
+    }
+
+    .call-popup a:hover {
+      background-color: #f0f0f0;
     }
   </style>
 </head>
@@ -164,7 +199,12 @@
     </div>
   </section>
 
-  <a href="tel:509192816" class="call-btn">📞 Zadzwoń teraz</a>
+  <!-- Przycisk Zadzwoń teraz -->
+  <div class="call-btn" onclick="toggleCallPopup()">📞 Zadzwoń teraz</div>
+  <div class="call-popup" id="callPopup">
+    <a href="tel:509192816">📞 509 192 816</a>
+    <a href="tel:781555519">📞 781 555 519</a>
+  </div>
 
   <script>
     function showSection(id) {
@@ -172,6 +212,19 @@
       sections.forEach(section => section.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
+
+    function toggleCallPopup() {
+      const popup = document.getElementById('callPopup');
+      popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    }
+
+    window.addEventListener('click', function(e) {
+      const popup = document.getElementById('callPopup');
+      const button = document.querySelector('.call-btn');
+      if (!popup.contains(e.target) && e.target !== button) {
+        popup.style.display = 'none';
+      }
+    });
   </script>
 
 </body>
