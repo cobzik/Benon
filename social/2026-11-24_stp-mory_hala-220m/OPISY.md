@@ -1,7 +1,7 @@
 # STP Mory – obiekt 220 m przed betonowaniem
 
 Pliki:
-- `benon_stp-mory_220m.mp4` – film 1080×1920, 14 s (TikTok, Instagram Reels, Facebook Reels)
+- `benon_stp-mory_220m.mp4` – film 1080×1920, 14 s, 60 kl./s (TikTok, Instagram Reels, Facebook Reels)
 - `okladka_stp-mory_220m.jpg` – okładka
 - `materialy/` – zdjęcie hali przed betonowaniem
 

@@ -66,6 +66,27 @@ def clip_video(src, i, d, a=None, b=None, speed=1.0, z=(1.0, 1.05), c0=(0.5, 0.4
     run(*inp, "-vf", vf, "-an", "-c:v", "libx264", "-crf", "14", "-preset", "fast", o)
     return o
 
+def still_smooth(src, i, d, z=(1.0, 1.05), c0=(0.5, 0.5), c1=None):
+    """Płynny ruch po zdjęciu: każda klatka liczona z dokładnością ułamka piksela
+    (bez 'schodków' przy wolnym najeździe), wygładzony start i koniec ruchu."""
+    c1 = c1 or c0; o = f"{WORK}/shot{i}.mp4"
+    im = Image.open(src).convert("RGB")
+    im = im.resize((im.width * 2, im.height * 2), Image.LANCZOS)          # zapas rozdzielczości
+    w0, h0 = im.size; base = max(W / w0, H / h0)
+    p = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
+                          "-vf", f"{GRADE},format=yuv420p,setsar=1", "-c:v", "libx264", "-crf", "14", "-preset", "fast", o], stdin=subprocess.PIPE)
+    n = int(round(d * FPS))
+    for k in range(n):
+        u = k / max(1, n - 1); e = u * u * u * (u * (6 * u - 15) + 10)    # smootherstep
+        zz = z[0] + (z[1] - z[0]) * e; sc = base * zz
+        cx = (c0[0] + (c1[0] - c0[0]) * e) * w0; cy = (c0[1] + (c1[1] - c0[1]) * e) * h0
+        vw, vh = W / sc, H / sc
+        left = min(max(cx - vw / 2, 0), w0 - vw); top = min(max(cy - vh / 2, 0), h0 - vh)
+        fr = im.transform((W, H), Image.AFFINE, (1 / sc, 0, left, 0, 1 / sc, top), resample=Image.BICUBIC)
+        p.stdin.write(fr.tobytes())
+    p.stdin.close(); p.wait()
+    return o
+
 def assemble(parts, tl, out):
     endbg = f"{WORK}/endbg.mp4"
     run("-f", "lavfi", "-i", f"color=c=0x0f1114:s={W}x{H}:r={FPS}:d={tl.durs[-1]}", "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", endbg)

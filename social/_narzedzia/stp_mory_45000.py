@@ -5,19 +5,22 @@ import benon_motion as bm
 P = os.path.join(bm.REPO, "social", "2026-11-24_stp-mory_posadzki-45000m2")
 M = lambda n: os.path.join(P, "materialy", f"hala_{n:02d}.jpg")
 os.makedirs(bm.WORK, exist_ok=True)
+bm.FPS = 60   # zdjęcia: płynny ruch w 60 kl./s
 SC = 1920 / 924
-def pan(vp): v = vp * SC; return (v - 800, v - 280)       # przesuw w okolicy punktu zbiegu
+def pan(vp):   # poziome zdjęcie: przesuw w poziomie w okolicy punktu zbiegu
+    v = vp * SC; ww = 2000 * SC
+    return dict(c0=((v - 260) / ww, 0.5), c1=((v + 260) / ww, 0.5))
 # (zdjęcie, czas, parametry ruchu)
 SHOTS = [(1, 2.9, dict(z=(1.00, 1.08))),
-         (8, 2.3, dict(pan_x=pan(940))),
+         (8, 2.3, pan(940)),
          (2, 2.2, dict(z=(1.08, 1.00))),
-         (7, 2.3, dict(pan_x=pan(790))),
-         (3, 2.3, dict(pan_x=pan(1060))),
+         (7, 2.3, pan(790)),
+         (3, 2.3, pan(1060)),
          (5, 2.2, dict(z=(1.00, 1.07))),
          (6, 2.4, dict(z=(1.07, 1.00)))]
 tl = bm.Timeline([d for _, d, _ in SHOTS])
 def base():
-    parts = [bm.clip_video(M(n), i, d, still=True, c0=(0.5, 0.5), **kw) for i, (n, d, kw) in enumerate(SHOTS)]
+    parts = [bm.still_smooth(M(n), i, d, **kw) for i, (n, d, kw) in enumerate(SHOTS)]
     bm.assemble(parts, tl, f"{bm.WORK}/base_mory45.mp4")
 T, E = tl.T, tl.E
 ITEMS = [

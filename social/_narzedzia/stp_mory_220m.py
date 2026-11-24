@@ -5,11 +5,12 @@ import benon_motion as bm
 P = os.path.join(bm.REPO, "social", "2026-11-24_stp-mory_hala-220m")
 IMG = os.path.join(P, "materialy", "hala_220m_przed_betonowaniem.jpg")
 os.makedirs(bm.WORK, exist_ok=True)
+bm.FPS = 60   # zdjęcie: płynny ruch w 60 kl./s
 # Jedno zdjęcie = jedno ujęcie: delikatny najazd i lekki ruch w dół, kadr na posadzce i zbrojeniu (bez sufitu)
-SHOTS = [(10.8, (1.20, 1.32), (0.50, 0.62), (0.50, 0.66))]
+SHOTS = [(10.8, (1.18, 1.34), (0.50, 0.61), (0.50, 0.66))]
 tl = bm.Timeline([s[0] for s in SHOTS])
 def base():
-    parts = [bm.clip_video(IMG, i, d, still=True, z=z, c0=c0, c1=c1) for i, (d, z, c0, c1) in enumerate(SHOTS)]
+    parts = [bm.still_smooth(IMG, i, d, z=z, c0=c0, c1=c1) for i, (d, z, c0, c1) in enumerate(SHOTS)]
     bm.assemble(parts, tl, f"{bm.WORK}/base_mory220.mp4")
 t0 = tl.T(0); tE = tl.E(0)
 ITEMS = [

@@ -1,7 +1,7 @@
 # STP Mory – posadzki 45 000 m² dla metra warszawskiego (2024–2026)
 
 Pliki:
-- `benon_stp-mory_45000m2.mp4` – film 1080×1920, 17 s (TikTok, Instagram Reels, Facebook Reels)
+- `benon_stp-mory_45000m2.mp4` – film 1080×1920, 17 s, 60 kl./s (TikTok, Instagram Reels, Facebook Reels)
 - `okladka_stp-mory_45000m2.jpg` – okładka
 - `materialy/` – 9 zdjęć gotowych hal
 
