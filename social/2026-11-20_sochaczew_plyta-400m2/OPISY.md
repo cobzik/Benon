@@ -1,59 +1,40 @@
-# Płyta fundamentowa 400 m² – okolice Sochaczewa (20.11.2026)
+# Płyta fundamentowa 400 m² – okolice Sochaczewa (listopad 2026)
 
 Pliki:
-- `benon_sochaczew_reels.mp4` – Instagram / Facebook Reels (1080×1920, 23 s)
-- `benon_sochaczew_tiktok.mp4` – TikTok (1080×1920, 23 s, wersja z pytaniem „zgadnij, ile godzin”)
-- `okladka_sochaczew_reels.jpg`, `okladka_sochaczew_tiktok.jpg` – okładki (kadr z licznikiem 400 m²)
-- `materialy/` – oryginalne materiały z budowy
+- `benon_sochaczew_400m2.mp4` – film 1080×1920, 23 s (TikTok, Instagram Reels, Facebook Reels)
+- `okladka_sochaczew_400m2.jpg` – okładka
+- `materialy/` – oryginalne nagranie z placu
 
-Montaż: stabilizacja obrazu, korekta kolorów, płynne przejścia, animowane napisy, wskaźnik etapów,
-plansza końcowa z logo.
+Napisy w filmie:
+1. Płyta fundamentowa pod halę: **400 m²**, betonowanie: 2 godziny
+2. 01 · Betonowanie: płyta fundamentowa z funkcją posadzki
+3. Sprzęt: zacieraczki mechaniczne
+4. 02 · Wiązanie betonu (wskaźnik etapów: betonowanie → wiązanie → zacieranie)
+5. 03 · Zacieranie: 15–20 godzin, zacieranie na gładko
+6. Realizacja · listopad 2026: hala 400 m², okolice Sochaczewa, beton: Atrans
+7. Plansza końcowa: logo, „Jesteśmy na rynku od 2000 roku”, „Działamy na terenie całej Polski”, www.benon.com.pl, tel. 781 555 519
 
-Muzyka: spokojny ambient skomponowany specjalnie do tego filmu (bez praw autorskich, można
-spokojnie publikować i promować płatnie). Jeśli wolisz popularny utwór, wycisz ścieżkę i dodaj
-muzykę w aplikacji.
-
----
-
-## Instagram / Facebook – opis
-
-400 m² betonu wylane w 2 godziny.
-
-Płyta fundamentowa z funkcją posadzki: fundament i gotowa posadzka hali w jednym.
-Beton już leży, teraz czekamy, aż zwiąże. Potem wchodzą zacieraczki mechaniczne
-i 15–20 godzin pracy, aż powierzchnia będzie gładka.
-
-📍 okolice Sochaczewa
-🚛 beton: Atrans
-
-Działamy w całej Polsce od 2000 roku.
-📞 781 555 519
-🌐 www.benon.com.pl
-
-#posadzkiprzemyslowe #plytafundamentowa #posadzkabetonowa #budowahali #hala
-#zacieraniebetonu #beton #sochaczew #benon
-
-## TikTok – opis
-
-400 m² wylane w 2 godziny, a robota dopiero się zaczyna. Zgadnij, ile godzin trwa zacieranie na gładko 👇
-📍 Sochaczew | beton: Atrans | www.benon.com.pl
-
-#posadzka #beton #budowa #plytafundamentowa #hala #zacieranie #budowlanka #fyp
-
-### Pierwszy komentarz (przypiąć)
-
-15–20 godzin 😉 Najpierw beton musi związać, dopiero wtedy wchodzą zacieraczki. Część 2 z gotową posadzką już wkrótce!
+Muzyka: własna, spokojna melodia bez praw autorskich (można promować płatnie).
 
 ---
 
-## Co jeszcze można zrobić z tego materiału
+## Opis (Instagram / Facebook)
 
-1. **Część 2 – „Przed i po”**: ten sam kadr (np. z czerwonym kontenerem) po zatarciu i przejście
-   od surowego betonu do błyszczącej posadzki. W tym samym stylu graficznym.
-2. **Timelapse nocnego zacierania**: telefon na statywie przez całą noc. Z 15–20 h pracy wychodzi 20–30 s filmu.
-3. **Karuzela na Instagram / Facebook**: „Jak powstaje płyta fundamentowa z funkcją posadzki”, krok po kroku.
-4. **Portfolio na stronie**: sekcja „Portfolio” na www.benon.com.pl pokazuje teraz „wkrótce…”. Ta realizacja dobrze ją otworzy.
-5. **Oznaczenie Atrans**: oznaczyć firmę w poście lub poprosić ich o udostępnienie.
+Płyta fundamentowa z funkcją posadzki pod halę 400 m².
 
-Do kolejnych nagrań: nagrywać w pełnej jakości (ten plik ma 392×848), trzymać telefon stabilnie,
-nagrać kilka sekund zacieraczki w ruchu z bliska i jedno ujęcie z góry (np. z rusztowania lub podnośnika).
+▪️ betonowanie: 2 godziny
+▪️ zacieranie na gładko: 15–20 godzin
+▪️ lokalizacja: okolice Sochaczewa
+▪️ beton: Atrans
+
+Jesteśmy na rynku od 2000 roku. Działamy na terenie całej Polski.
+📞 781 555 519 | 🌐 www.benon.com.pl
+
+#posadzkiprzemyslowe #plytafundamentowa #posadzkabetonowa #budowahali #hala #zacieraniebetonu #beton #benon
+
+## Opis (TikTok)
+
+Płyta fundamentowa z funkcją posadzki pod halę 400 m². Betonowanie 2 h, zacieranie na gładko 15–20 h. Okolice Sochaczewa, beton: Atrans.
+www.benon.com.pl
+
+#posadzkiprzemyslowe #plytafundamentowa #posadzka #beton #budowa #hala #budowlanka

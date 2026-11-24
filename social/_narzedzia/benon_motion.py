@@ -184,7 +184,7 @@ def endcard(L, t, t0, *_):
     L.alpha_composite(lg, ((W - lg.width) // 2, 560 - lg.height // 2))
     lw = int(480 * ease((lt - 0.3) / 0.6)); d.rectangle([(W - lw) // 2, 718, (W + lw) // 2, 724], fill=YEL + (255,))
     # atuty
-    f = F(FSB, 46); items = ["Działamy od 2000 roku", "Działamy w całej Polsce"]
+    f = F(FSB, 46); items = ["Jesteśmy na rynku od 2000 roku", "Działamy na terenie całej Polski"]
     wmax = max(d.textlength(s_, font=f) for s_ in items); x0 = (W - (wmax + 64)) / 2
     for k, s_ in enumerate(items):
         al = ease((lt - 0.45 - 0.15 * k) / 0.5); y = 790 + 78 * k + (1 - al) * 16; A = int(255 * al)

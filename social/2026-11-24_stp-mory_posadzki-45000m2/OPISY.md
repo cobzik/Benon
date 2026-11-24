@@ -1,47 +1,45 @@
-# STP Mory – metro warszawskie (TikTok)
+# STP Mory – posadzki 45 000 m² dla metra warszawskiego (2024–2026)
 
 Pliki:
-- `benon_stp-mory_45000m2.mp4` – TikTok (1080×1920, 17 s). Działa też jako Reels na Instagramie i Facebooku.
-- `okladka_stp-mory_45000m2.jpg` – okładka (licznik 45 000 m²)
-- `materialy/` – oryginalne materiały z budowy
+- `benon_stp-mory_45000m2.mp4` – film 1080×1920, 17 s (TikTok, Instagram Reels, Facebook Reels)
+- `okladka_stp-mory_45000m2.jpg` – okładka
+- `materialy/` – 9 zdjęć gotowych hal
 
 Napisy w filmie:
-1. METRO WARSZAWSKIE · STP MORY – licznik do **45 000 m²** posadzek w halach obsługi taboru metra
-2. TECHNOLOGIA – Posadzki DST, utwardzane powierzchniowo
-3. BETON – C25/30 + włókna kopolimerowe Bautech
-4. KOMPLEKSOWO – wykonanie z projektem, system utwardzenia Bautech
-5. REALIZACJA – 2024–2026, Warszawa · STP Mory
-6. Plansza końcowa: logo, www.benon.com.pl, tel. 781 555 519
+1. Metro warszawskie · STP Mory: **45 000 m²** posadzek w halach obsługi taboru metra
+2. Technologia: posadzki DST, utwardzane powierzchniowo
+3. Beton: C25/30 + włókna kopolimerowe Bautech
+4. Zakres: wykonanie z projektem, system utwardzenia Bautech
+5. Realizacja: 2024–2026, Warszawa · STP Mory
+6. Plansza końcowa: logo, „Jesteśmy na rynku od 2000 roku”, „Działamy na terenie całej Polski”, www.benon.com.pl, tel. 781 555 519
 
 Muzyka: własna, spokojna melodia bez praw autorskich (można promować płatnie).
 
 ---
 
-## TikTok – opis
+## Opis (Instagram / Facebook)
 
-45 000 m² posadzek dla metra warszawskiego 🚇 Stacja Techniczno-Postojowa Mory, hale obsługi taboru.
-Technologia DST, beton C25/30 z włóknami kopolimerowymi, utwardzenie powierzchniowe Bautech z projektem wykonawczym. 2024–2026.
-www.benon.com.pl
+Stacja Techniczno-Postojowa Mory (STP Mory), metro warszawskie.
+Posadzki w halach obsługi taboru metra, 2024–2026.
 
-#posadzkiprzemyslowe #metrowarszawskie #stpmory #posadzka #beton #warszawa #budowa #budowlanka #fyp
-
-## Instagram / Facebook – opis
-
-45 000 m² posadzek dla metra warszawskiego 🚇
-
-Stacja Techniczno-Postojowa Mory (STP Mory) w Warszawie: posadzki w halach obsługi taboru metra,
-wykonane w latach 2024–2026.
-
-▪️ technologia DST (posadzka utwardzana powierzchniowo)
-▪️ beton C25/30 z włóknami kopolimerowymi Bautech
+▪️ powierzchnia: 45 000 m²
+▪️ technologia: DST (posadzka utwardzana powierzchniowo)
+▪️ beton: C25/30 z włóknami kopolimerowymi Bautech
 ▪️ system utwardzenia powierzchniowego Bautech
-▪️ projekt wykonawczy po naszej stronie
+▪️ projekt wykonawczy w zakresie wykonawcy
 
-Działamy w całej Polsce od 2000 roku.
+Jesteśmy na rynku od 2000 roku. Działamy na terenie całej Polski.
 📞 781 555 519 | 🌐 www.benon.com.pl
 
 #posadzkiprzemyslowe #metrowarszawskie #stpmory #posadzkabetonowa #utwardzanieposadzek #warszawa #benon
 
-### Do sprawdzenia przed publikacją
-- Czy inwestor lub generalny wykonawca pozwala publikować zdjęcia z obiektu. Przy infrastrukturze metra bywają takie ograniczenia.
-- Warto oznaczyć @bautech (jeśli mają konto), bo mogą udostępnić film.
+## Opis (TikTok)
+
+STP Mory, metro warszawskie: 45 000 m² posadzek DST w halach obsługi taboru, 2024–2026. Beton C25/30 z włóknami kopolimerowymi, system utwardzenia Bautech z projektem wykonawczym.
+www.benon.com.pl
+
+#posadzkiprzemyslowe #metrowarszawskie #stpmory #posadzka #beton #warszawa #budowa
+
+### Przed publikacją
+- Sprawdzić, czy inwestor lub generalny wykonawca zgadza się na publikację zdjęć z obiektu.
+- Można oznaczyć firmę Bautech.

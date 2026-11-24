@@ -24,7 +24,7 @@ ITEMS = [
     lambda L, t: bm.counter(L, t, T(0), E(0), "METRO WARSZAWSKIE · STP MORY", 45000, "m²", ["posadzek w halach", "obsługi taboru metra"], size=160, step=100),
     lambda L, t: bm.caption(L, t, T(1), E(2), "TECHNOLOGIA", ["Posadzki DST"], "utwardzane powierzchniowo"),
     lambda L, t: bm.caption(L, t, T(3), E(3), "BETON", ["C25/30", "+ włókna"], "kopolimerowe Bautech"),
-    lambda L, t: bm.caption(L, t, T(4), E(5), "KOMPLEKSOWO", ["Wykonanie", "z projektem"], "system utwardzenia Bautech"),
+    lambda L, t: bm.caption(L, t, T(4), E(5), "ZAKRES", ["Wykonanie", "z projektem"], "system utwardzenia Bautech"),
     lambda L, t: bm.caption(L, t, T(6), E(6), "REALIZACJA", ["2024–2026"], None, y=1200),
     lambda L, t: bm.chips(L, t, T(6) + 0.25, E(6), [("pin", "Warszawa · STP Mory")], y=1400),
 ]

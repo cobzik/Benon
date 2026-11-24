@@ -5,8 +5,7 @@ Każda realizacja ma własny folder: film, okładkę, gotowe opisy z hashtagami 
 
 | Data | Realizacja | Film | Długość | Gdzie publikować |
 |---|---|---|---|---|
-| 20.11.2026 | Płyta fundamentowa 400 m², okolice Sochaczewa | `benon_sochaczew_reels.mp4` | 23 s | Instagram, Facebook |
-| 20.11.2026 | jw. (wersja z pytaniem do widzów) | `benon_sochaczew_tiktok.mp4` | 23 s | TikTok |
+| 20.11.2026 | Płyta fundamentowa 400 m², okolice Sochaczewa | `benon_sochaczew_400m2.mp4` | 23 s | TikTok, Instagram, Facebook |
 | 24.11.2026 | STP Mory: 45 000 m² posadzek DST dla metra | `benon_stp-mory_45000m2.mp4` | 17 s | TikTok, Instagram, Facebook |
 | 24.11.2026 | STP Mory: obiekt 220 m przed betonowaniem | `benon_stp-mory_220m.mp4` | 14 s | TikTok, Instagram, Facebook |
 
@@ -16,10 +15,9 @@ Każda realizacja ma własny folder: film, okładkę, gotowe opisy z hashtagami 
 social/
 ├── README.md                              ← ten spis
 ├── 2026-11-20_sochaczew_plyta-400m2/
-│   ├── benon_sochaczew_reels.mp4          ← film na Instagram / Facebook
-│   ├── benon_sochaczew_tiktok.mp4         ← film na TikTok
-│   ├── okladka_sochaczew_*.jpg            ← okładki
-│   ├── OPISY.md                           ← opisy, hashtagi, komentarz do przypięcia
+│   ├── benon_sochaczew_400m2.mp4          ← film (TikTok / Reels)
+│   ├── okladka_sochaczew_400m2.jpg        ← okładka
+│   ├── OPISY.md                           ← opisy i hashtagi
 │   └── materialy/                         ← oryginalne nagranie z placu
 ├── 2026-11-24_stp-mory_posadzki-45000m2/
 │   ├── benon_stp-mory_45000m2.mp4
@@ -46,7 +44,8 @@ Odstęp 2–3 dni między filmami.
 
 - Logo Benon w lewym górnym rogu, żółte akcenty w kolorze kurtek firmowych.
 - Napisy i logo poza strefami przycisków TikToka i Instagrama.
-- Na końcu każdego filmu plansza: logo, „Działamy od 2000 roku”, „Działamy w całej Polsce”, www.benon.com.pl, tel. 781 555 519.
+- Teksty: same fakty (metraże, czasy, technologia, lokalizacja).
+- Na końcu każdego filmu plansza: logo, „Jesteśmy na rynku od 2000 roku”, „Działamy na terenie całej Polski”, www.benon.com.pl, tel. 781 555 519.
 - Muzyka: sama spokojna melodia, własna, bez praw autorskich, więc można ją promować płatnie.
 
 ## Nowy film

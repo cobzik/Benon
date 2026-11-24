@@ -1,40 +1,37 @@
-# STP Mory – obiekt 220 m przed betonowaniem (TikTok)
+# STP Mory – obiekt 220 m przed betonowaniem
 
 Pliki:
-- `benon_stp-mory_220m.mp4` – TikTok (1080×1920, 14 s). Działa też jako Reels na Instagramie i Facebooku.
-- `okladka_stp-mory_220m.jpg` – okładka (licznik 220 m)
-- `materialy/` – oryginalne materiały z budowy
+- `benon_stp-mory_220m.mp4` – film 1080×1920, 14 s (TikTok, Instagram Reels, Facebook Reels)
+- `okladka_stp-mory_220m.jpg` – okładka
+- `materialy/` – zdjęcie hali przed betonowaniem
 
 Jedno zdjęcie, jedno ujęcie: delikatny najazd kamery, kadr na posadzce i zbrojeniu. Napisy po kolei:
-1. Licznik do **220 m** („długości obiektu, ok. 1 000 m²”)
-2. „Pompa + rurociąg – z jednego ustawienia na całą długość”
-3. „12 h non-stop – ciągła praca, bez przerw”
-4. Plansza końcowa z logo, „Działamy od 2000 roku”, „Działamy w całej Polsce”, www.benon.com.pl, tel. 781 555 519
+1. STP Mory · przed betonowaniem: **220 m** długości obiektu, ok. 1 000 m²
+2. Logistyka: pompa + rurociąg z jednego ustawienia na całą długość
+3. Betonowanie: 12 godzin ciągłej pracy
+4. Plansza końcowa: logo, „Jesteśmy na rynku od 2000 roku”, „Działamy na terenie całej Polski”, www.benon.com.pl, tel. 781 555 519
 
-Pasuje jako seria z filmem `2026-11-24_stp-mory_posadzki-45000m2` (45 000 m²). Najpierw ten (przed betonowaniem), potem gotowe posadzki.
+Muzyka: własna, spokojna melodia bez praw autorskich (można promować płatnie).
 
 ---
 
-## TikTok – opis
+## Opis (Instagram / Facebook)
 
-220 metrów długości, jedno ustawienie pompy i 12 godzin betonowania bez przerwy 💪
-Jeden z obiektów na STP Mory dla metra warszawskiego, tuż przed betonowaniem.
-www.benon.com.pl
+STP Mory, metro warszawskie: jeden z obiektów przed betonowaniem.
 
-#posadzkiprzemyslowe #betonowanie #pompadobetonu #metrowarszawskie #stpmory #budowa #budowlanka #beton #fyp
+▪️ długość obiektu: 220 m
+▪️ powierzchnia: ok. 1 000 m²
+▪️ betonowanie pompą z rurociągiem, z jednego ustawienia
+▪️ czas betonowania: 12 godzin ciągłej pracy
 
-## Instagram / Facebook – opis
-
-Powierzchnia? Około 1 000 m². Wyzwanie? 220 metrów długości.
-
-Jeden z obiektów na STP Mory (metro warszawskie) tuż przed betonowaniem. Beton podawany
-rurociągiem z pompy z jednego ustawienia na całą długość obiektu. 12 godzin ciągłej pracy.
-
-Działamy w całej Polsce od 2000 roku.
+Jesteśmy na rynku od 2000 roku. Działamy na terenie całej Polski.
 📞 781 555 519 | 🌐 www.benon.com.pl
 
 #posadzkiprzemyslowe #betonowanie #metrowarszawskie #stpmory #posadzkabetonowa #warszawa #benon
 
-### Pierwszy komentarz (przypiąć)
+## Opis (TikTok)
 
-Efekt końcowy tej hali już wkrótce. Chcesz zobaczyć betonowanie z pompy na 220 m? 👇
+STP Mory, metro warszawskie. Obiekt 220 m, ok. 1 000 m². Betonowanie pompą z rurociągiem z jednego ustawienia, 12 godzin ciągłej pracy.
+www.benon.com.pl
+
+#posadzkiprzemyslowe #betonowanie #pompadobetonu #metrowarszawskie #stpmory #beton #budowa

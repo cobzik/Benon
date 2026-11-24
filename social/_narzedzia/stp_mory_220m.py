@@ -15,7 +15,7 @@ t0 = tl.T(0); tE = tl.E(0)
 ITEMS = [
     lambda L, t: bm.counter(L, t, t0, t0 + 3.4, "STP MORY · PRZED BETONOWANIEM", 220, "m", "długości obiektu, ok. 1 000 m²", dur=1.8),
     lambda L, t: bm.caption(L, t, t0 + 3.7, t0 + 6.9, "LOGISTYKA", ["Pompa + rurociąg"], "z jednego ustawienia na całą długość", big=84),
-    lambda L, t: bm.caption(L, t, t0 + 7.2, tE, "BETONOWANIE", ["12 h non-stop"], "ciągła praca, bez przerw", y=1190, big=96),
+    lambda L, t: bm.caption(L, t, t0 + 7.2, tE, "BETONOWANIE", ["12 godzin"], "ciągłej pracy", y=1190, big=96),
 ]
 END = ("", "")   # plansza końcowa ma stały układ (benon_motion.endcard)
 if __name__ == "__main__":
