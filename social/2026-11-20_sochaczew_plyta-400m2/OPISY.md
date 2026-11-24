@@ -7,7 +7,7 @@ Pliki:
 - `materialy/` – oryginalne materiały z budowy
 
 Montaż: stabilizacja obrazu, korekta kolorów, płynne przejścia, animowane napisy, wskaźnik etapów,
-efekty dźwiękowe (przejścia, licznik) i plansza końcowa z logo.
+plansza końcowa z logo.
 
 Muzyka: spokojny ambient skomponowany specjalnie do tego filmu (bez praw autorskich, można
 spokojnie publikować i promować płatnie). Jeśli wolisz popularny utwór, wycisz ścieżkę i dodaj

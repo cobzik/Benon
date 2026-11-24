@@ -44,12 +44,12 @@ TIKTOK = [
     lambda L, t: bm.caption(L, t, T(5), E(5), "ODPOWIEDŹ", ["15–20 godzin"], "bez przerwy, aż będzie gładko", y=1190),
     lambda L, t: bm.chips(L, t, T(6), E(6), [("pin", "Okolice Sochaczewa"), ("truck", "Beton: Atrans")], y=1300),
 ]
-END1 = "Posadzki przemysłowe od 2000 roku"
+END1 = ""
 if __name__ == "__main__":
     if "base" in sys.argv: base()
     b = f"{bm.WORK}/base_sochaczew.mp4"
     if "preview" in sys.argv:
-        bm.preview(b, tl, REELS, END1, "Zapytaj o wycenę posadzki", f"{bm.WORK}/pv_sochaczew.jpg", [s + 1.5 for s in S[:-1]] + [tl.total - 0.5])
+        bm.preview(b, tl, REELS, END1, "", f"{bm.WORK}/pv_sochaczew.jpg", [s + 1.5 for s in S[:-1]] + [tl.total - 0.5])
     if "export" in sys.argv:
-        bm.export(b, tl, REELS, END1, "Zapytaj o wycenę posadzki", os.path.join(P, "benon_sochaczew_reels.mp4"), "s_reels", counters=[(T(0), 1.3)])
-        bm.export(b, tl, TIKTOK, END1, "Jaki był Twój typ? Napisz w komentarzu", os.path.join(P, "benon_sochaczew_tiktok.mp4"), "s_tt")
+        bm.export(b, tl, REELS, END1, "", os.path.join(P, "benon_sochaczew_reels.mp4"), "s_reels", counters=[(T(0), 1.3)])
+        bm.export(b, tl, TIKTOK, END1, "", os.path.join(P, "benon_sochaczew_tiktok.mp4"), "s_tt")

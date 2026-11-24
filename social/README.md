@@ -8,7 +8,7 @@ Każda realizacja ma własny folder: film, okładkę, gotowe opisy z hashtagami 
 | 20.11.2026 | Płyta fundamentowa 400 m², okolice Sochaczewa | `benon_sochaczew_reels.mp4` | 23 s | Instagram, Facebook |
 | 20.11.2026 | jw. (wersja z pytaniem do widzów) | `benon_sochaczew_tiktok.mp4` | 23 s | TikTok |
 | 24.11.2026 | STP Mory: 45 000 m² posadzek DST dla metra | `benon_stp-mory_45000m2.mp4` | 17 s | TikTok, Instagram, Facebook |
-| 24.11.2026 | STP Mory: obiekt 220 m przed betonowaniem | `benon_stp-mory_220m.mp4` | 13 s | TikTok, Instagram, Facebook |
+| 24.11.2026 | STP Mory: obiekt 220 m przed betonowaniem | `benon_stp-mory_220m.mp4` | 14 s | TikTok, Instagram, Facebook |
 
 ## Struktura
 
@@ -46,8 +46,8 @@ Odstęp 2–3 dni między filmami.
 
 - Logo Benon w lewym górnym rogu, żółte akcenty w kolorze kurtek firmowych.
 - Napisy i logo poza strefami przycisków TikToka i Instagrama.
-- Na końcu każdego filmu plansza: www.benon.com.pl, tel. 781 555 519.
-- Muzyka i efekty dźwiękowe są własne, bez praw autorskich, więc można je promować płatnie.
+- Na końcu każdego filmu plansza: logo, „Działamy od 2000 roku”, „Działamy w całej Polsce”, www.benon.com.pl, tel. 781 555 519.
+- Muzyka: sama spokojna melodia, własna, bez praw autorskich, więc można ją promować płatnie.
 
 ## Nowy film
 

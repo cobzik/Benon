@@ -28,7 +28,7 @@ ITEMS = [
     lambda L, t: bm.caption(L, t, T(6), E(6), "REALIZACJA", ["2024–2026"], None, y=1200),
     lambda L, t: bm.chips(L, t, T(6) + 0.25, E(6), [("pin", "Warszawa · STP Mory")], y=1400),
 ]
-END = ("Posadzki przemysłowe od 2000 roku", "Duża inwestycja? Zapytaj o wycenę")
+END = ("", "")   # plansza końcowa ma stały układ (benon_motion.endcard)
 if __name__ == "__main__":
     if "base" in sys.argv: base()
     b = f"{bm.WORK}/base_mory45.mp4"

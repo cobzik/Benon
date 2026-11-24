@@ -1,13 +1,15 @@
 """Benon – wspólny silnik montażu filmów 9:16 (TikTok / Reels).
 
 Każdy projekt (sochaczew.py, stp_mory_45000.py, stp_mory_220m.py) opisuje ujęcia i napisy,
-a ten moduł robi resztę: montaż ujęć z przejściami, animowaną grafikę, muzykę, efekty
-dźwiękowe i eksport.
+a ten moduł robi resztę: montaż ujęć z przejściami, animowaną grafikę, muzykę
+i eksport.
+
+Dźwięk: sama melodia (music.py), bez efektów.
 
 Bezpieczne strefy: logo i napisy omijają górny pasek aplikacji (y < 220), prawą kolumnę
 przycisków (x > 900) i dolny opis (y > 1560).
 """
-import math, os, shutil, subprocess, wave
+import math, os, shutil, subprocess
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
@@ -173,21 +175,31 @@ def chips(L, t, t0, t1, items, y=1420):
             for wx in (cx - 9, cx + 14): d.ellipse([wx - 6, cy + 8, wx + 6, cy + 20], fill=DARK + (A,), outline=YEL + (A,), width=3)
         text(d, (x + 50, yy + 4), s, f, WHITE, ak)
 
-def endcard(L, t, t0, line1, line2):
+def endcard(L, t, t0, *_):
+    """Plansza końcowa: logo, dwa atuty firmy, adres strony jako przycisk, telefon."""
     lt = t - t0
     if lt < 0: return
     d = ImageDraw.Draw(L); a = ease(lt / 0.7); sc = 0.94 + 0.06 * ease(lt / 0.9)
     lg = with_alpha(LOGO_L.resize((int(LOGO_L.width * sc), int(LOGO_L.height * sc)), Image.LANCZOS), a)
-    L.alpha_composite(lg, ((W - lg.width) // 2, 640 - lg.height // 2))
-    lw = int(520 * ease((lt - 0.3) / 0.6)); d.rectangle([(W - lw) // 2, 800, (W + lw) // 2, 806], fill=YEL + (255,))
-    def c(s, f, y, col, al, box=None):
-        w = d.textlength(s, font=f); x = (W - w) / 2
-        if box: d.rounded_rectangle([x - 36, y - 20, x + w + 36, y + f.size + 18], radius=40, fill=box + (int(255 * al),))
-        text(d, (x, y), s, f, col, al)
-    c(line1, F(FSB, 44), 860, GREY, ease((lt - 0.45) / 0.5))
-    al = ease((lt - 0.7) / 0.5); c("www.benon.com.pl", F(FB, 64), 1010 + (1 - al) * 20, DARK, al, YEL)
-    al = ease((lt - 0.9) / 0.5); c("tel. 781 555 519", F(FXB, 56), 1150 + (1 - al) * 20, WHITE, al)
-    al = ease((lt - 1.1) / 0.5); c(line2, fit(d, line2, FSB, 38, 900), 1255 + (1 - al) * 20, GREY, al)
+    L.alpha_composite(lg, ((W - lg.width) // 2, 560 - lg.height // 2))
+    lw = int(480 * ease((lt - 0.3) / 0.6)); d.rectangle([(W - lw) // 2, 718, (W + lw) // 2, 724], fill=YEL + (255,))
+    # atuty
+    f = F(FSB, 46); items = ["Działamy od 2000 roku", "Działamy w całej Polsce"]
+    wmax = max(d.textlength(s_, font=f) for s_ in items); x0 = (W - (wmax + 64)) / 2
+    for k, s_ in enumerate(items):
+        al = ease((lt - 0.45 - 0.15 * k) / 0.5); y = 790 + 78 * k + (1 - al) * 16; A = int(255 * al)
+        d.ellipse([x0, y + 4, x0 + 44, y + 48], fill=YEL + (A,))
+        d.line([(x0 + 12, y + 27), (x0 + 19, y + 35), (x0 + 33, y + 18)], fill=DARK + (A,), width=5)
+        text(d, (x0 + 64, y + 2), s_, f, WHITE, al)
+    # adres strony jako przycisk
+    al = ease((lt - 0.85) / 0.5); A = int(255 * al); y = 1010 + (1 - al) * 20
+    fu = F(FB, 70); parts = [("www.", (150, 156, 168)), ("benon", YEL), (".com.pl", WHITE)]
+    tw = sum(d.textlength(p_, font=fu) for p_, _ in parts); x = (W - tw) / 2
+    d.rounded_rectangle([x - 48, y - 26, x + tw + 48, y + 100], radius=63, fill=(28, 31, 37, A), outline=YEL + (A,), width=4)
+    for p_, c in parts: text(d, (x, y), p_, fu, c, al); x += d.textlength(p_, font=fu)
+    # telefon
+    al = ease((lt - 1.05) / 0.5); y = 1180 + (1 - al) * 20
+    s_ = "tel. 781 555 519"; f2 = F(FXB, 54); w = d.textlength(s_, font=f2); text(d, ((W - w) / 2, y), s_, f2, WHITE, al)
 
 def render_overlay(tl, items, end1, end2, tag, grad_bottom=0.75):
     _logos()
@@ -207,54 +219,12 @@ def render_overlay(tl, items, end1, end2, tag, grad_bottom=0.75):
         L.save(f"{fd}/{n:04d}.png", compress_level=1)
     return fd
 
-# ---------------------------------------------------------------- audio
-SR = 48000
-def _whoosh(dur=0.9, seed=0):
-    rng = np.random.default_rng(seed); n = int(dur * SR); x = rng.standard_normal(n)
-    t = np.linspace(0, 1, n); fc = 300 + 3500 * np.sin(np.pi * t) ** 2
-    y = np.zeros(n); s = 0.0
-    for i in range(n):
-        al = 1 - math.exp(-2 * math.pi * fc[i] / SR); s += al * (x[i] - s); y[i] = s
-    y -= np.convolve(y, np.ones(64) / 64, "same")
-    return y * np.sin(np.pi * t) ** 2 / (np.abs(y).max() + 1e-9)
-def _tick(f=2400):
-    n = int(0.03 * SR); t = np.arange(n) / SR
-    return np.sin(2 * np.pi * f * t) * np.exp(-t * 180)
-def _boom():
-    n = int(1.6 * SR); t = np.arange(n) / SR; f = 70 * np.exp(-t * 1.5) + 42
-    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 2.8) * (1 - np.exp(-t * 300))
-
-def sfx_track(tl, counters, total):
-    """Whoosh przy przejściach, cichy 'tik' przy liczniku, niski akcent na planszy końcowej."""
-    n = int(total * SR) + SR; L = np.zeros(n); R = np.zeros(n)
-    def add(sig, at, g, pan=0.0):
-        i = int(at * SR); m = min(len(sig), n - i)
-        if m > 0 and i >= 0: L[i:i + m] += sig[:m] * g * (1 - pan); R[i:i + m] += sig[:m] * g * (1 + pan)
-    for k, st in enumerate(tl.starts[1:]):
-        w = _whoosh(seed=k); add(w, st + X / 2 - 0.45, 0.10, pan=(0.25 if k % 2 else -0.25))
-    for (t0, dur) in counters:   # tiki zwalniają razem z licznikiem
-        for j in range(14):
-            p = j / 14; tt = t0 + 0.1 + dur * (1 - (1 - p) ** (1 / 3))
-            add(_tick(2200 + 40 * j), tt, 0.05)
-    add(_boom(), tl.end_t + 0.1, 0.22)
-    return np.stack([L, R], 1)[: int(total * SR)]
-
-def write_wav(path, st):
-    st = st / max(1e-9, np.abs(st).max()) * 0.85
-    w = wave.open(path, "wb"); w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
-    w.writeframes((st * 32767).astype("<i2").tobytes()); w.close()
-
-def read_wav(path):
-    w = wave.open(path); a = np.frombuffer(w.readframes(w.getnframes()), "<i2").reshape(-1, 2) / 32767; w.close(); return a
-
 # ---------------------------------------------------------------- export
 def export(base, tl, items, end1, end2, out, tag, counters=(), grad_bottom=0.75, music_seed_dur=None):
     fd = render_overlay(tl, items, end1, end2, tag, grad_bottom)
     mus = f"{WORK}/music_{tag}.wav"
     subprocess.run(["python3", os.path.join(HERE, "music.py"), f"{tl.total:.3f}", mus], check=True)
-    m = read_wav(mus); s = sfx_track(tl, counters, tl.total); k = min(len(m), len(s))
-    mix = m[:k] / (np.abs(m).max() + 1e-9) * 0.8 + s[:k] * 0.9
-    mixp = f"{WORK}/mix_{tag}.wav"; write_wav(mixp, mix)
+    mixp = mus   # sama melodia, bez efektów dźwiękowych
     run("-i", base, "-framerate", str(FPS), "-i", f"{fd}/%04d.png", "-i", mixp,
         "-filter_complex", "[0:v][1:v]overlay=0:0:format=auto,format=yuv420p[v];[2:a]loudnorm=I=-15:TP=-1.5:LRA=9,aresample=48000[a]",
         "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "20", "-preset", "slow", "-profile:v", "high", "-r", str(FPS),

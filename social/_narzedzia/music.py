@@ -43,16 +43,12 @@ for b in range(nbars):
 for m in [74,78,81,85]:
     f=hz(m); nn=int(4*SR); tt=np.arange(nn)/SR
     add((np.sin(2*np.pi*f*tt)+0.2*np.sin(4*np.pi*f*tt))*np.exp(-tt*1.0)*(1-np.exp(-tt*300))*0.035, DUR-3.2, rng.uniform(-.4,.4))
-# air noise
-noise=rng.standard_normal(N); k=np.ones(200)/200; noise=np.convolve(noise,k,'same'); noise-=np.convolve(noise,np.ones(4000)/4000,'same')
-L+=noise*0.05; R+=np.roll(noise,333)*0.05
-# reverb
 irn=int(2.8*SR); ti=np.arange(irn)/SR
 def rev(x,seed):
-    ir=np.random.default_rng(seed).standard_normal(irn)*np.exp(-ti/0.9); ir[:int(0.02*SR)]=0
+    ir=np.random.default_rng(seed).standard_normal(irn); ir=np.convolve(ir,np.ones(48)/48,'same')*np.exp(-ti/0.8); ir[:int(0.02*SR)]=0
     M=1<<int(np.ceil(np.log2(len(x)+irn))); y=np.fft.irfft(np.fft.rfft(x,M)*np.fft.rfft(ir,M),M)[:len(x)]
     return y/np.max(np.abs(ir))*0.012
-L2=L+rev(L,1)*0.9; R2=R+rev(R,2)*0.9
+L2=L+rev(L,1)*0.6; R2=R+rev(R,2)*0.6
 n=int(DUR*SR); L2=L2[:n]; R2=R2[:n]
 fi=int(1.0*SR); fo=int(2.5*SR)
 for X in (L2,R2): X[:fi]*=np.linspace(0,1,fi)**2; X[-fo:]*=np.linspace(1,0,fo)**1.5

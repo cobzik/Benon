@@ -13,7 +13,7 @@ Napisy w filmie:
 5. REALIZACJA – 2024–2026, Warszawa · STP Mory
 6. Plansza końcowa: logo, www.benon.com.pl, tel. 781 555 519
 
-Muzyka i efekty dźwiękowe: własne, bez praw autorskich (można promować płatnie).
+Muzyka: własna, spokojna melodia bez praw autorskich (można promować płatnie).
 
 ---
 
