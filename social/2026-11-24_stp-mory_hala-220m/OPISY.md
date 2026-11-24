@@ -30,7 +30,8 @@ Powierzchnia? Około 1 000 m². Wyzwanie? 220 metrów długości.
 Jeden z obiektów na STP Mory (metro warszawskie) tuż przed betonowaniem. Beton podawany
 rurociągiem z pompy z jednego ustawienia na całą długość obiektu. 12 godzin ciągłej pracy.
 
-Duża inwestycja? Zapytaj o wycenę: 📞 781 555 519 | 🌐 www.benon.com.pl
+Działamy w całej Polsce od 2000 roku.
+📞 781 555 519 | 🌐 www.benon.com.pl
 
 #posadzkiprzemyslowe #betonowanie #metrowarszawskie #stpmory #posadzkabetonowa #warszawa #benon
 

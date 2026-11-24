@@ -37,7 +37,8 @@ wykonane w latach 2024–2026.
 ▪️ system utwardzenia powierzchniowego Bautech
 ▪️ projekt wykonawczy po naszej stronie
 
-Duża inwestycja? Zapytaj o wycenę: 📞 781 555 519 | 🌐 www.benon.com.pl
+Działamy w całej Polsce od 2000 roku.
+📞 781 555 519 | 🌐 www.benon.com.pl
 
 #posadzkiprzemyslowe #metrowarszawskie #stpmory #posadzkabetonowa #utwardzanieposadzek #warszawa #benon
 

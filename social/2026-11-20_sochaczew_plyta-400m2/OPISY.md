@@ -26,7 +26,7 @@ i 15–20 godzin pracy, aż powierzchnia będzie gładka.
 📍 okolice Sochaczewa
 🚛 beton: Atrans
 
-Planujesz halę, magazyn albo posadzkę przemysłową? Zapytaj o wycenę:
+Działamy w całej Polsce od 2000 roku.
 📞 781 555 519
 🌐 www.benon.com.pl
 
