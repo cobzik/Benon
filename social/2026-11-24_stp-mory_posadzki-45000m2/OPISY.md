@@ -1,9 +1,9 @@
 # STP Mory – metro warszawskie (TikTok)
 
 Pliki:
-- `benon_tiktok_stp_mory.mp4` – TikTok (1080×1920, 17 s). Działa też jako Reels na Instagramie i Facebooku.
-- `okladka_tiktok.jpg` – okładka (licznik 45 000 m²)
-- `zrodla/` – skrypty montażu i muzyki
+- `benon_stp-mory_45000m2.mp4` – TikTok (1080×1920, 17 s). Działa też jako Reels na Instagramie i Facebooku.
+- `okladka_stp-mory_45000m2.jpg` – okładka (licznik 45 000 m²)
+- `materialy/` – oryginalne materiały z budowy
 
 Napisy w filmie:
 1. METRO WARSZAWSKIE · STP MORY – licznik do **45 000 m²** posadzek w halach obsługi taboru metra
@@ -13,7 +13,7 @@ Napisy w filmie:
 5. REALIZACJA – 2024–2026, Warszawa · STP Mory
 6. Plansza końcowa: logo, www.benon.com.pl, tel. 781 555 519
 
-Muzyka: ten sam spokojny podkład co w filmie z Sochaczewa, skomponowany przeze mnie (bez praw autorskich).
+Muzyka i efekty dźwiękowe: własne, bez praw autorskich (można promować płatnie).
 
 ---
 

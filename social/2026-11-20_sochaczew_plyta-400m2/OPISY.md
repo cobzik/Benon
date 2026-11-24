@@ -1,13 +1,13 @@
 # Płyta fundamentowa 400 m² – okolice Sochaczewa (20.11.2026)
 
-Pliki (wersja 2):
-- `benon_reel_instagram.mp4` – Instagram / Facebook Reels (1080×1920, 23 s)
-- `benon_tiktok.mp4` – TikTok (1080×1920, 23 s, wersja z pytaniem „zgadnij, ile godzin”)
-- `okladka_reel.jpg`, `okladka_tiktok.jpg` – okładki (kadr z licznikiem 400 m²)
-- `zrodla/` – skrypty montażu i muzyki (do kolejnych filmów w tym samym stylu)
+Pliki:
+- `benon_sochaczew_reels.mp4` – Instagram / Facebook Reels (1080×1920, 23 s)
+- `benon_sochaczew_tiktok.mp4` – TikTok (1080×1920, 23 s, wersja z pytaniem „zgadnij, ile godzin”)
+- `okladka_sochaczew_reels.jpg`, `okladka_sochaczew_tiktok.jpg` – okładki (kadr z licznikiem 400 m²)
+- `materialy/` – oryginalne materiały z budowy
 
-Montaż: stabilizacja obrazu, korekta kolorów, płynne przejścia, powolny najazd kamery,
-animowane napisy, wskaźnik etapów (betonowanie → wiązanie → zacieranie), plansza końcowa z logo.
+Montaż: stabilizacja obrazu, korekta kolorów, płynne przejścia, animowane napisy, wskaźnik etapów,
+efekty dźwiękowe (przejścia, licznik) i plansza końcowa z logo.
 
 Muzyka: spokojny ambient skomponowany specjalnie do tego filmu (bez praw autorskich, można
 spokojnie publikować i promować płatnie). Jeśli wolisz popularny utwór, wycisz ścieżkę i dodaj

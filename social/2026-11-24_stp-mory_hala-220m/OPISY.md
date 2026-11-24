@@ -1,9 +1,9 @@
 # STP Mory – obiekt 220 m przed betonowaniem (TikTok)
 
 Pliki:
-- `benon_tiktok_stp_mory_220m.mp4` – TikTok (1080×1920, 13 s). Działa też jako Reels na Instagramie i Facebooku.
-- `okladka_tiktok.jpg` – okładka (licznik 220 m)
-- `zrodla/` – skrypty montażu i muzyki
+- `benon_stp-mory_220m.mp4` – TikTok (1080×1920, 13 s). Działa też jako Reels na Instagramie i Facebooku.
+- `okladka_stp-mory_220m.jpg` – okładka (licznik 220 m)
+- `materialy/` – oryginalne materiały z budowy
 
 Montaż z jednego zdjęcia:
 1. Kamera „wjeżdża” w głąb hali, licznik odlicza do **220 m** („długości obiektu, ok. 1 000 m²”)
@@ -11,7 +11,7 @@ Montaż z jednego zdjęcia:
 3. Kamera się oddala: „12 h non-stop – ciągła praca, bez przerw”
 4. Plansza końcowa z logo, www.benon.com.pl, tel. 781 555 519
 
-Pasuje jako seria z filmem `2026-11-24_stp_mory_metro` (45 000 m²). Najpierw ten (przed betonowaniem), potem gotowe posadzki.
+Pasuje jako seria z filmem `2026-11-24_stp-mory_posadzki-45000m2` (45 000 m²). Najpierw ten (przed betonowaniem), potem gotowe posadzki.
 
 ---
 
